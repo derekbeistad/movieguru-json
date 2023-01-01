@@ -1,5 +1,5 @@
-import BrowseNav from "./pages/components/BrowseNav";
-import Carousel from "./pages/components/Carousel";
+import BrowseNav from "./BrowseNav";
+import Carousel from "./Carousel";
 
 function Browse(props) {
   // Get arrays from props

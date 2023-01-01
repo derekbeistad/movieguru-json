@@ -1,5 +1,5 @@
 import { signIn, getCsrfToken, getProviders } from "next-auth/react";
-import Header from "../components/Header";
+import Header from "../../components/Header";
 
 function Signin({ csrfToken, providers }) {
   return (

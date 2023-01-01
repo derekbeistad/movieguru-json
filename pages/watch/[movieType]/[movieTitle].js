@@ -1,13 +1,13 @@
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import WatchPage from "../../components/WatchPage";
+import Header from "../../../components/Header";
+// import Header from "../../components/Header";
+import Footer from "../../../components/Footer";
+import WatchPage from "../../../components/WatchPage";
 import { useRouter } from "next/router";
 import connectMongo from "../../../utils/connectMongo";
 import Show from "../../../models/showModel";
 import Movie from "../../../models/movieModel";
 import { useSession } from "next-auth/react";
-
-import AccessDenied from "../../components/accessDenied";
+import AccessDenied from "../../../components/accessDenied";
 
 export const getServerSideProps = async () => {
   try {
