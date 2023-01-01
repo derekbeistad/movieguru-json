@@ -3,9 +3,12 @@ import Carousel from "./Carousel";
 
 function Browse(props) {
   // Get arrays from props
-  let movies, shows = [];
-  movies = props.shows.movies;
-  shows = props.shows.shows;
+  let movies,
+    shows = [];
+  if (props.shows !== null) {
+    movies = props.shows.movies;
+    shows = props.shows.shows;
+  }
 
   // Filter arrays by category to create films and series objects
   const films = {
