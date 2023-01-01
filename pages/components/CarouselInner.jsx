@@ -23,7 +23,7 @@ function CarouselInner(props) {
 
   return (
     <div className="carousel-inner" style={styleTransform}>
-      {props.items.map((item) => (
+      {props.items?.map((item) => (
         <CarouselItem
           item={item}
           key={item._id}
