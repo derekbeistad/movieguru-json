@@ -3,8 +3,8 @@ import Carousel from "./Carousel";
 
 function Browse(props) {
   // Get arrays from props
-  let movies,
-    shows = [];
+  let movies = [];
+  let shows = [];
 
   let films = {
     dramas: [],
