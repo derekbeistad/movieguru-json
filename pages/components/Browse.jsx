@@ -3,7 +3,9 @@ import Carousel from "./Carousel";
 
 function Browse(props) {
   // Get arrays from props
-  const { movies, shows } = props.shows;
+  let movies, shows = [];
+  movies = props.shows.movies;
+  shows = props.shows.shows;
 
   // Filter arrays by category to create films and series objects
   const films = {
