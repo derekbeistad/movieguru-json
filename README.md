@@ -1,5 +1,5 @@
-## MovieGuru
-# a movie streaming clone
+# MovieGuru
+### A clone of a streaming service
 
 Built using Next.js (React.js, Node.js), MongoDB and Mongoose, and OAuth login.
 
