@@ -5,22 +5,34 @@ function Browse(props) {
   // Get arrays from props
   let movies,
     shows = [];
+
+  let films = {
+    dramas: [],
+    documentaries: [],
+    comedies: []
+  }
+  let series = {
+    travels: [],
+    documentaries: [],
+    comedies: []
+  }
+
   if (props.shows !== null) {
     movies = props.shows.movies;
     shows = props.shows.shows;
-  }
 
-  // Filter arrays by category to create films and series objects
-  const films = {
-    dramas: movies.filter((x) => x.mainCategory === "drama"),
-    documentaries: movies.filter((x) => x.mainCategory === "documentary"),
-    comedies: movies.filter((x) => x.mainCategory === "comedy"),
-  };
-  const series = {
-    travels: shows.filter((x) => x.mainCategory === "travel"),
-    documentaries: shows.filter((x) => x.mainCategory === "documentary"),
-    comedies: shows.filter((x) => x.mainCategory === "comedy"),
-  };
+    // Filter arrays by category to create films and series objects
+    films = {
+      dramas: movies.filter((x) => x.mainCategory === "drama"),
+      documentaries: movies.filter((x) => x.mainCategory === "documentary"),
+      comedies: movies.filter((x) => x.mainCategory === "comedy"),
+    };
+    series = {
+      travels: shows.filter((x) => x.mainCategory === "travel"),
+      documentaries: shows.filter((x) => x.mainCategory === "documentary"),
+      comedies: shows.filter((x) => x.mainCategory === "comedy"),
+    };
+  }
 
   return (
     <div id="browse-section">
