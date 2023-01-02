@@ -33,12 +33,7 @@ export const getServerSideProps = async () => {
       notFound: true,
     };
   }
-  return {
-    props: {
-      shows: [],
-      movies: []
-    }
-  }
+  
 };
 
 function Home(shows, movies) {
