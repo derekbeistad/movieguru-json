@@ -3,8 +3,8 @@ import Image from "next/image";
 function CarouselItem(props) {
   return (
     <div
-      id={props.item._id}
-      key={props.item._id}
+      id={props.item._id.$oid}
+      key={props.item._id.$oid}
       className="carousel-item"
       onMouseEnter={props.handleMouseEnter}
       onMouseOver={props.handleMouseEnter}

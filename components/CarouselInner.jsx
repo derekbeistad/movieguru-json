@@ -26,7 +26,7 @@ function CarouselInner(props) {
       {props.items?.map((item) => (
         <CarouselItem
           item={item}
-          key={item._id}
+          key={item._id.$oid}
           handleMouseEnter={(x) => handleMouseEnter(x.target.id)}
         />
       ))}

@@ -18,8 +18,8 @@ function Browse(props) {
   }
 
   if (props.shows !== null) {
-    movies = props.shows.movies;
-    shows = props.shows.shows;
+    movies = props.movies;
+    shows = props.shows;
 
     // Filter arrays by category to create films and series objects
     films = {

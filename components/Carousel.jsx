@@ -70,7 +70,7 @@ function Carousel(props) {
   function handleMouseEnter(hoveredId) {
     // Find hovered Item
     const foundItem = props.items.find((x) => {
-      return x._id == hoveredId;
+      return x._id.$oid == hoveredId;
     });
     const popupXValue = setPopupLocation(hoveredId); // Get popup position
 
