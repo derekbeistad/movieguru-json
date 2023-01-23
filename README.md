@@ -5,6 +5,9 @@ Built using Next.js (React.js, Node.js), with OAuth login.
 
 Shows and movies can be browsed without logging in, but to view the movie page, the user must be login in. Titles are stored in JSON files and are then filtered by category into their own carousels.
 
+### View Live
+https://movieguru-json.vercel.app/
+
 ### Video Demo of the project
 https://youtu.be/X-nP1zt8XZ0
 
